@@ -1,0 +1,246 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 45px;
+    
+}
+
+#nav--bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+a:active {
+    color: lightgrey;
+}
+
+.hero {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url("./images/residential-main-banner.jpg");
+    color: white;
+    text-shadow: -1px -1px 0 rgb(44, 44, 44), 1px -1px 0 rgb(44, 44, 44), -1px 1px 0 rgb(44, 44, 44), 1px 1px 0 rgb(44, 44, 44);
+}
+
+.hero > h1 {
+    font-size: 60px;
+}
+
+.hero > p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    background-color: #66b2b2;
+    height: 900px;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(44, 44, 44), 1px -1px 0 rgb(44, 44, 44), -1px 1px 0 rgb(44, 44, 44), 1px 1px 0 rgb(44, 44, 44);
+}
+
+.reasons > h1 {
+    margin-bottom: 65px;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.card1, .card2, .card3 {
+    max-width: 350px;
+    border-style: solid;
+    padding: 25px 25px;
+    border-color:rgb(180, 180, 180);
+    border-radius: 20px;
+}
+
+.card1 > h2, .card2 > h2, .card3 > h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card1 > p, .card2 > p, .card3 > p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 25px;
+    margin-left: 15px;
+}
+
+.card3 {
+    height: 370px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.contact-info {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    border-color:rgb(19, 19, 19);
+    border-radius: 20px;
+    border-style: solid;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+}
+
+.contact > h1 {
+    margin-bottom: 60px;
+}
+
+.contact-info > a {
+    color: black;
+
+}
+
+.contact-info > a:link {
+    color: black;
+}
+
+.contact-info > a:visited {
+    color: grey;
+}
+
+.contact-info > a:hover {
+    color: darkgrey;
+}
+
+.contact-info > a:active {
+    color: lightgrey;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+.services > h1 {
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+.all-service-cards {
+    display: flex;
+    gap: 60px;
+}
+
+.service {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: normal;
+  width: 350px;
+}
+
+.service:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.service:main,
+.service:focus {
+  user-select: auto;
+}
+
+.service:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.service:disabled {
+  cursor: auto;
+}
