@@ -19,13 +19,12 @@ ul {
     padding-top: 5px;
     padding-bottom: 10px;
     background-color: white;
-}
-
-.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+    z-index: 999;
+    box-shadow: 0px 15px 10px -15px #111;
 }
 
 
@@ -61,6 +60,7 @@ a:active {
     background-image: url("./images/residential-main-banner.jpg");
     color: white;
     text-shadow: -1px -1px 0 rgb(44, 44, 44), 1px -1px 0 rgb(44, 44, 44), -1px 1px 0 rgb(44, 44, 44), 1px 1px 0 rgb(44, 44, 44);
+    margin-top: 140px;
 }
 
 .hero > h1 {
@@ -99,7 +99,7 @@ a:active {
     max-width: 350px;
     border-style: solid;
     padding: 25px 25px;
-    border-color:rgb(180, 180, 180);
+    border-color:rgb(255, 255, 255);
     border-radius: 20px;
 }
 
@@ -187,7 +187,7 @@ a:active {
 
 .service {
   appearance: button;
-  background-color: #1899D6;
+  background-color: #66b2b2;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -218,7 +218,7 @@ a:active {
 
 .service:after {
   background-clip: padding-box;
-  background-color: #1CB0F6;
+  background-color: #66b2b2;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
